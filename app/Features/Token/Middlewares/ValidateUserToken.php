@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Features\Token\Middlewares;
 
-use App\Features\Shared\Enums\ModeEnum;
 use App\Features\Token\Models\Token;
 use Closure;
 use Illuminate\Http\Request;

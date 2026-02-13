@@ -2,11 +2,9 @@
 
 namespace App\Features\Joke\Client;
 
-use App\Features\Shared\PaymentGateway\Enums\PaymentErrorCodeEnum;
-use App\Features\Shared\PaymentGateway\Exceptions\PaymentFailedException;
+use Exception;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Http;
-use Exception;
 
 class JokeClient
 {

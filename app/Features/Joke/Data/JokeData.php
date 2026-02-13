@@ -10,13 +10,10 @@ class JokeData extends Data implements Wireable
 {
     use WireableData;
 
-    function __construct(
+    public function __construct(
         public int $id,
         public string $type,
         public string $setup,
         public string $punchline,
-    )
-    {
-
-    }
+    ) {}
 }

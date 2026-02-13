@@ -8,10 +8,7 @@ use App\Http\Controllers\Controller;
 
 class FetchJokesController extends Controller
 {
-    function __construct(protected FetchJokesAction $fetch_jokes_action)
-    {
-
-    }
+    public function __construct(protected FetchJokesAction $fetch_jokes_action) {}
 
     /**
      * @return array<int, JokeData>

@@ -5,15 +5,10 @@ namespace App\Features\Joke\Actions;
 use App\Features\Joke\Client\JokeClient;
 use App\Features\Joke\Data\JokeData;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Http;
-use Exception;
 
 class FetchJokesAction
 {
-    function __construct(protected JokeClient $joke_client)
-    {
-
-    }
+    public function __construct(protected JokeClient $joke_client) {}
 
     /**
      * @return array<int, JokeData>
